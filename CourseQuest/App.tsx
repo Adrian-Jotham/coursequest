@@ -1,10 +1,14 @@
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
+import LogoScreen from './src/screen/LogoScreen';
+import HelloWorld from './src/screen/HELLOWORLD';
+import Homee from './src/screen/Homee';
 
-const LogoScreen = () => {
+
+const App = () => {
   return (
     <View style={styles.container}>
-      <Image source={require('./Assep/Logo.png')} style={styles.logo} />
+      <Homee/>
     </View>
   );
 };
@@ -12,14 +16,10 @@ const LogoScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#DEDEDE',
-    alignItems: 'center',
     justifyContent: 'center',
-  },
-  logo: {
-    width: 300, // set your desired width
-    height: 300, // set your desired height
+    alignItems: 'center',
   },
 });
 
-export default LogoScreen;
+export default App;
+
