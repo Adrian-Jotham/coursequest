@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    width: 428, // set your desired width
-    height: 428, // set your desired height
+    width: 300,
+    height: 300,
   },
 });
 
