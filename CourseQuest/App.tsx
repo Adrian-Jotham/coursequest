@@ -1,17 +1,24 @@
 import React from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
 import LogoScreen from './src/screen/LogoScreen';
 import HelloWorld from './src/screen/HELLOWORLD';
 import Homee from './src/screen/Homee';
 
+import ScrolabelView from './src/screen/scrollexample';
+import SearchView from './src/screen/search';
+
+import { AppRegistry } from 'react-native';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Homee/>
+      <SearchView/>
     </View>
   );
 };
+
+
+// AppRegistry.registerComponent('YourAppName', () => Homee);
 
 const styles = StyleSheet.create({
   container: {
