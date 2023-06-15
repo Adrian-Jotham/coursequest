@@ -75,14 +75,13 @@ const styles = StyleSheet.create({
   imageBack: {
     width: 50,
     height: 60,
-    paddingRight: 50,
-    // marginRight: 20,
+    marginRight: 20,
   },
   imageLogo: {
-    // width: 275,
-    // height: 70,
-    // MarginLeft: 115,
-    // marginTop: 20,
+    width: 275,
+    height: 70,
+    MarginLeft: 155,
+    
   },
   // Rest of your styles
 });
