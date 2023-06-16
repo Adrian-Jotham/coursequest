@@ -14,6 +14,7 @@ const RegisterPage = ({ navigation }) => {
     }
 
     alert(`Username: ${username}\nEmail: ${email}\nPassword: ${password}`);
+    navigation.navigate('Login');
   }
 
   return (

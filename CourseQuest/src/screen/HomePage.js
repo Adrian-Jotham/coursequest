@@ -213,16 +213,18 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   logo: {
-    marginRight: 5,
+    right: 10,
+    height: 60 ,
+    width: 250,
   },
   logoLonceng: {
     marginBottom: 10,
+    left: 60,
   },
   filterIcon: {
     width: 42,
     height: 38,
     marginRight:30,
-    // marginTop:5,
   },
   textContainer:{
     flexDirection:'row',
@@ -301,7 +303,7 @@ const styles = StyleSheet.create({
     height: 229,
     borderRadius:15,
     marginRight:23,
-    backgroundColor:'white',
+    backgroundColor:'#EFEFEF',
   },
   gambarBox:{
     width: 200,
@@ -331,11 +333,13 @@ const styles = StyleSheet.create({
   },
   navigationBar:{
     flexDirection:'row',
-    padding:10,
-    marginLeft:10,
+    padding: 10,
+    marginLeft: 10,
   },
   insideNav:{
-    marginLeft:50,
+    height: 30,
+    width: 30,
+    marginLeft: 50,
   },
 });
 

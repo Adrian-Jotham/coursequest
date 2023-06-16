@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Image, StyleSheet, Text, ImageBackground } from 'react-native';
 import SearchBox from './SearchBox';
 import { ScrollView } from 'react-native-gesture-handler';
+import BottomNavbar from './navbar'
 
 const Profile = () => {
   return (
@@ -50,6 +51,7 @@ const Profile = () => {
       <View style={styles.buttonLain}>
         <Text style={styles.textLain}>Profile Lain</Text>
       </View>
+      <BottomNavbar/>
     </View>
   );
 };
@@ -69,7 +71,7 @@ const styles = StyleSheet.create({
     width: '85%',
   },
   logo: {
-    marginRight: 54,
+    marginRight: 5,
   },
   logoLonceng: {
     marginBottom: 10,
