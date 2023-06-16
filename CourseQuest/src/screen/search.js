@@ -4,11 +4,11 @@ import { ScrollView, Image, View, Text,TextInput, StyleSheet } from 'react-nativ
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const SearchView = () => {
+const Search = () => {
   const navigation = useNavigation();
   const [searchText, setSearchText] = useState('');
   const handleBackPress = () => {
-    navigation.goBack(); //kemananya itu
+    navigation.navigate('Homepage'); //kemananya itu
   };
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -129,5 +129,5 @@ const styles = StyleSheet.create({
   // Rest of your styles
 });
 
-export default SearchView;
+export default Search;
 

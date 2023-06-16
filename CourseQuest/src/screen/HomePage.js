@@ -1,9 +1,18 @@
 import React from 'react';
-import { View, Image, StyleSheet, Text, ImageBackground } from 'react-native';
+import { View, Image, StyleSheet, Text, TouchableOpacity, ImageBackground } from 'react-native';
 import SearchBox from './SearchBox';
 import { ScrollView } from 'react-native-gesture-handler';
+import BottomNavbar from './navbar'
+import { useNavigation } from '@react-navigation/native';
 
 const HomePage = () => {
+  const navigation = useNavigation();
+  const handleBackPress = () => {
+    navigation.goBack(); //kemananya itu
+  };
+  const handleAdvanced = () => {
+    navigation.navigate('Search')
+  }
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
@@ -24,15 +33,17 @@ const HomePage = () => {
         <View style={styles.searchBoxContainer}>
           <SearchBox style={styles.searchBox} />
         </View>
-        <Image
+        <TouchableOpacity onPress={handleAdvanced}>
+          <Image
           source={require('./Gambar/Filter.png')}
           style={styles.filterIcon}
-        />
+          />
+        </TouchableOpacity>
       </View>
 
       <View style={styles.textContainer}>
         <Text style={styles.textFeature}>Featured</Text>
-        <Text style={styles.textSee}>See all</Text>
+        {/* <Text style={styles.textSee}>See all</Text> */}
       </View>
 
       <ScrollView
@@ -141,7 +152,7 @@ const HomePage = () => {
       
       <View style={styles.textContainer2}>
         <Text style={styles.textFeature}>Categories</Text>
-        <Text style={styles.textSee2}>See all</Text>
+        {/* <Text style={styles.textSee2}>See all</Text> */}
       </View>
       <View style={styles.container2}>
         <View style={styles.navigationBar}>
@@ -163,6 +174,7 @@ const HomePage = () => {
           />
         </View>
       </View>
+      <BottomNavbar/>
     </View>
   );
 };
@@ -201,7 +213,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   logo: {
-    marginRight: 54,
+    marginRight: 5,
   },
   logoLonceng: {
     marginBottom: 10,
