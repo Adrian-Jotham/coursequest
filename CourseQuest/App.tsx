@@ -4,7 +4,7 @@ import LogoScreen from './src/screen/LogoScreen';
 import HelloWorld from './src/screen/HELLOWORLD';
 import HomePage from './src/screen/HomePage';
 import LoginScreen from './src/screen/LoginPage';
-
+import RegisterScreen from './src/screen/RegisterPage';
 import ScrolabelView from './src/screen/scrollexample';
 import SearchView from './src/screen/search';
 import QuestAsia from './src/screen/QuestAsia';
@@ -21,10 +21,11 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Search" component={SearchView} />
+        {/* <Stack.Screen name="Search" component={SearchView} />
         <Stack.Screen name="Homepage" component={HomePage} />
-        <Stack.Screen name="Home" component={LoginScreen} />
-        <Stack.Screen name="View" component={ScrolabelView} />
+        <Stack.Screen name="Home" component={LoginScreen} /> */}
+        <Stack.Screen name="Home" component={RegisterScreen} />
+        {/* <Stack.Screen name="View" component={ScrolabelView} /> */}
       </Stack.Navigator>
     </NavigationContainer>
     // <SearchView/>
