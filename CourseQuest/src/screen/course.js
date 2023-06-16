@@ -1,10 +1,15 @@
 import React from 'react';
-import { View, Image, StyleSheet, Text, ImageBackground } from 'react-native';
+import { View, Image, StyleSheet, Text, ImageBackground, TouchableOpacity } from 'react-native';
 import SearchBox from './SearchBox';
 import { ScrollView } from 'react-native-gesture-handler';
 import BottomNavbar from './navbar'
+import { useNavigation } from '@react-navigation/native';
 
-const Wishlist = () => {
+const Course = () => {
+  const navigation = useNavigation();
+  const cookingquest = ()=>{
+    navigation.navigate('Cookingquest')
+  }
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
@@ -17,11 +22,11 @@ const Wishlist = () => {
           style={styles.logoLonceng}
         />
       </View>
-
-      <Text style={styles.textProfile}>Wishlist</Text>
-      <View style={styles.innerContainer}>
+    <Text style={styles.textProfile}>Current Quest</Text>
+    <TouchableOpacity onPress={cookingquest}>
+        <View style={styles.innerContainer}>
           <ImageBackground
-            source={require('./Gambar/Api.png')}
+            source={require('./Gambar/QuestMasak.png')}
             style={styles.gambarBox}
           >
             <View style={styles.gambarChild}>
@@ -33,15 +38,18 @@ const Wishlist = () => {
                 style={styles.masukWishlist}
               />
           </ImageBackground>
-          <Text style={styles.textDalamContainer}>Memasak dengan teknik yang baik</Text>
+          <Text style={styles.textDalamContainer}>Memasak dengan tantangan</Text>
           <View style={styles.harga}>
-            <Text style={styles.textDalamContainer2}>$ 15.99</Text>
+            <Text style={styles.textDalamContainer2}></Text>
             <Image
               source={require('./Gambar/ArrowBLACK.png')}
               style={styles.arrowBlack}
             />
           </View>
         </View>
+    </TouchableOpacity>
+      
+      
         <BottomNavbar/>
     </View>
     
@@ -155,4 +163,4 @@ const styles = StyleSheet.create({
   
 });
 
-export default Wishlist;
+export default Course;

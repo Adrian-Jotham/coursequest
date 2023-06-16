@@ -14,7 +14,7 @@ const questCooking = () => {
   const navigation = useNavigation();
   const [searchText, setSearchText] = useState('');
   const handleBackPress = () => {
-    navigation.goBack(); //kemananya itu
+    navigation.navigate('Course'); //kemananya itu
   };
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -26,7 +26,7 @@ const questCooking = () => {
           />
         </TouchableOpacity>
         <Image
-          source={require('./Gambar/HomeLogo1.png')}
+          source={require('./Gambar/HomeLogo.png')}
           style={styles.imageLogo}
         />
       </View>
@@ -42,7 +42,6 @@ const questCooking = () => {
             <Text>Creativity"</Text>
           </View>
           <View style={styles.value}>
-            <Text>$14.59</Text>
             <Text>$9.99</Text>
           </View>
         </View>

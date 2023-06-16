@@ -7,9 +7,7 @@ import { useNavigation } from '@react-navigation/native';
 
 const HomePage = () => {
   const navigation = useNavigation();
-  const handleBackPress = () => {
-    navigation.goBack(); //kemananya itu
-  };
+
   const handleAdvanced = () => {
     navigation.navigate('Search')
   }
@@ -219,7 +217,7 @@ const styles = StyleSheet.create({
   },
   logoLonceng: {
     marginBottom: 10,
-    left: 60,
+    // left: 60,
   },
   filterIcon: {
     width: 42,

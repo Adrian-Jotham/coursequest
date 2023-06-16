@@ -8,10 +8,10 @@ const BottomNavbar = () => {
         navigation.navigate('Homepage')
     }
     const course = ()=> {
-        navigation.navigate('course')
+        navigation.navigate('Course')
     }
     const wishlist = ()=> {
-        navigation.navigate('wishlist')
+        navigation.navigate('Wishlist')
     }
     const user = ()=> {
         navigation.navigate('Profile')
