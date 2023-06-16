@@ -7,6 +7,7 @@ import LoginScreen from './src/screen/LoginPage';
 
 import ScrolabelView from './src/screen/scrollexample';
 import SearchView from './src/screen/search';
+import QuestAsia from './src/screen/QuestAsia';
 
 import { AppRegistry } from 'react-native';
 
