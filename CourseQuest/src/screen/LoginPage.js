@@ -8,20 +8,29 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
+import { useNavigation } from '@react-navigation/native';
 
-const LoginScreen = ({navigation}) => {
+const LoginScreen = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
 
+  const navigation = useNavigation();
+
   const handleLogin = () => {
     alert(`Username: ${username}\nPassword: ${password}`);
+    navigation.navigate('Homepage')
+  };
+
+  const handleRegister = () => {
+    navigation.navigate('Register')
   };
 
   const handleImagePress = index => {
     alert(`Image ${index} pressed!`);
   };
 
+  
   return (
     <View style={styles.container}>
       <Image source={require('./Gambar/LoginLogo.png')} style={styles.logo} />
@@ -61,7 +70,7 @@ const LoginScreen = ({navigation}) => {
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
+      <TouchableOpacity onPress={handleRegister}>
         <Text style={styles.signupbutton}>
           Don't have an Account? Sign Up here
         </Text>
