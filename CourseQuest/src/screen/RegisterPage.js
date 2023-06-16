@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
-const SignUpScreen = ({ navigation }) => {
+const RegisterPage = ({ navigation }) => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -165,4 +165,4 @@ const styles = StyleSheet.create({
       },
 });
 
-export default SignUpScreen;
+export default RegisterPage;

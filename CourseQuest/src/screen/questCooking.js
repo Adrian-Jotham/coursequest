@@ -26,7 +26,7 @@ const questCooking = () => {
           />
         </TouchableOpacity>
         <Image
-          source={require('./Gambar/HomeLogo.png')}
+          source={require('./Gambar/HomeLogo1.png')}
           style={styles.imageLogo}
         />
       </View>
