@@ -9,7 +9,7 @@ import ScrolabelView from './src/screen/scrollexample';
 import SearchView from './src/screen/search';
 import QuestAsia from './src/screen/QuestAsia';
 import questCooking from './src/screen/questCooking';
-
+import Profile from './src/screen/Profile';
 import { AppRegistry } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -22,6 +22,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="QuestAsia" component={QuestAsia} />
         <Stack.Screen name="QuestCooking" component={questCooking} />
         <Stack.Screen name="Homepage" component={HomePage} />

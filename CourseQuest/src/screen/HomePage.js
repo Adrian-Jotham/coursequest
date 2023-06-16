@@ -139,10 +139,6 @@ const HomePage = () => {
         </View>
       </ScrollView>
       
-      <View style={styles.textContainer2}>
-        <Text style={styles.textFeature}>Categories</Text>
-        <Text style={styles.textSee2}>See all</Text>
-      </View>
       <View style={styles.container2}>
         <View style={styles.navigationBar}>
           <Image
