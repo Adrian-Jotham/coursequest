@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import BASEBG from './BASEBG';
 
 const HelloWorld = () => {
   return (
@@ -15,6 +16,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  
   text: {
     fontSize: 24,
     fontWeight: 'bold',
