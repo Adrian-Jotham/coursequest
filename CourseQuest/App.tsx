@@ -8,6 +8,7 @@ import LoginScreen from './src/screen/LoginPage';
 import ScrolabelView from './src/screen/scrollexample';
 import SearchView from './src/screen/search';
 import QuestAsia from './src/screen/QuestAsia';
+import questCooking from './src/screen/questCooking';
 
 import { AppRegistry } from 'react-native';
 
@@ -21,6 +22,8 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="QuestAsia" component={QuestAsia} />
+        <Stack.Screen name="QuestCooking" component={questCooking} />
         <Stack.Screen name="Homepage" component={HomePage} />
         <Stack.Screen name="Search" component={SearchView} />
         <Stack.Screen name="Home" component={LoginScreen} />

@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     color: 'red',
     borderBottomWidth: 1,
     borderColor: 'black',
-    marginBottom: 10,
+    marginBottom: 15,
   },
   rememberForgotContainer: {
     flexDirection: 'row',
