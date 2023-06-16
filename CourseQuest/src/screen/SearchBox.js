@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
   input: {
     flex: 1,
-    height: 40,
+    height: 38,
     borderRadius: 20,
     marginRight: 10,
   },
