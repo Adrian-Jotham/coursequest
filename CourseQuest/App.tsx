@@ -11,11 +11,23 @@ import QuestAsia from './src/screen/QuestAsia';
 
 import { AppRegistry } from 'react-native';
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+
+const Stack = createStackNavigator();
+
 const App = () => {
   return (
-      <LoginScreen/>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={LoginScreen} />
+        <Stack.Screen name="View" component={ScrolabelView} />
+      </Stack.Navigator>
+    </NavigationContainer>
+    // <LoginScreen/>
   );
-};
+}
 // AppRegistry.registerComponent('YourAppName', () => Homee);
 
 
