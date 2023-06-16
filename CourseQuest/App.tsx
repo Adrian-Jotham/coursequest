@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import LogoScreen from './src/screen/LogoScreen';
 import HelloWorld from './src/screen/HELLOWORLD';
-import Homee from './src/screen/Homee';
+import HomePage from './src/screen/HomePage';
 import LoginScreen from './src/screen/LoginPage';
 
 import ScrolabelView from './src/screen/scrollexample';
@@ -21,11 +21,13 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Search" component={SearchView} />
+        <Stack.Screen name="Homepage" component={HomePage} />
         <Stack.Screen name="Home" component={LoginScreen} />
         <Stack.Screen name="View" component={ScrolabelView} />
       </Stack.Navigator>
     </NavigationContainer>
-    // <LoginScreen/>
+    // <SearchView/>
   );
 }
 // AppRegistry.registerComponent('YourAppName', () => Homee);
