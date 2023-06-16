@@ -13,7 +13,7 @@ import { AppRegistry } from 'react-native';
 
 const App = () => {
   return (
-      <QuestAsia/>
+      <LoginScreen/>
   );
 };
 // AppRegistry.registerComponent('YourAppName', () => Homee);
